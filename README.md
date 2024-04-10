@@ -8,14 +8,14 @@ Using `vim-plug`
 
 ```vim
 Plug 'rktjmp/lush.nvim'
-Plug 'StradNikw/Naysayer.git'
+Plug 'StradNikw/Naysayer.nvim'
 ```
 
 Using `packer`
 
 ```lua
 use {
-  "StradNikw/Naysayer.git",
+  "StradNikw/Naysayer.nvim",
   requires = { "rktjmp/lush.nvim" }
 }
 ```
