@@ -1,4 +1,4 @@
-
+la
 local lush = require('lush')
 local hsl = lush.hsl
 
@@ -19,8 +19,8 @@ local theme = lush(function(injected_functions)
     -- DiffDelete     { }, -- Diff mode: Deleted line |diff.txt|
     -- DiffText       { }, -- Diff mode: Changed text within a changed line |diff.txt|
      EndOfBuffer    { }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
-     TermCursor     { fg = hsl("#8cde94") }, -- Cursor in a focused terminal
-     TermCursorNC   { fg = hsl("#8cde94") }, -- Cursor in an unfocused terminal
+     TermCursor     { fg = hsl("#8cde94"), bg = hsl("#8cde94") }, -- Cursor in a focused terminal
+     TermCursorNC   { fg = hsl("#8cde94"), bg = hsl("#8cde94") }, -- Cursor in an unfocused terminal
      ErrorMsg       { bg = hsl("#ff0000"), fg = hsl("#d1b897")}, -- Error messages on the command line
      VertSplit      { bg = hsl("#062329") }, -- Column separating vertically split windows
      Folded         { }, -- Line used for closed folds
