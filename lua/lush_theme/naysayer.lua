@@ -80,7 +80,7 @@ local theme = lush(function(injected_functions)
     -- Commented-out groups should chain up to their preferred (*) group
     -- by default.
 
-     Comment        { fg = hsl("#2ec90c") }, -- Any comment
+     Comment        { fg = hsl("#60ce55") }, -- Any comment
 
      Constant       { fg = hsl("#7ad0c6") }, -- (*) Any constant
      String         { fg = hsl("#2ec90c") }, --   A string constant: "this is a string"
