@@ -111,7 +111,7 @@ local theme = lush(function(injected_functions)
      Structure      { fg = hsl("#ffffff") }, --   struct, union, enum, etc.
      Typedef        { fg = hsl("#d1b897") }, --   A typedef
 
-     Special        { fg = hsl("#ffffff") }, -- (*) Any special symbol
+     Special        { fg = hsl("#8cde94") }, -- (*) Any special symbol
      SpecialChar    { fg = hsl("#8cde94") }, --   Special character in a constant
      Tag            { fg = hsl("#8cde94") }, --   You can use CTRL-] on this
      Delimiter      { fg = hsl("#d1b897") }, --   Character that needs attention
