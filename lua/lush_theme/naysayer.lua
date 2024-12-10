@@ -195,8 +195,8 @@ local theme = lush(function(injected_functions)
     sym"@type"              { fg = hsl("#8cde94") }, -- Type
     sym"@type.definition"   { fg = hsl("#ffffff") }, -- Typedef
     -- sym"@storageclass"      { fg = hsl("#d1b897") }, -- StorageClass
-    sym"@structure"         { fg = hsl("#d1b897") }, -- Structure
-    -- sym"@namespace"         { }, -- Identifier
+    sym"@structure"         { fg = hsl("#ffffff") }, -- Structure
+    sym"@namespace"         { fg = hsl("#ffffff")  }, -- Identifier
     sym"@include"           { fg = hsl("#ffffff") }, -- Include
     -- sym"@preproc"           { }, -- PreProc
     -- sym"@debug"             { }, -- Debug
