@@ -90,11 +90,11 @@ local theme = lush(function(injected_functions)
      Float          { fg = hsl("#7ad0c6") }, --   A floating point constant: 2.3e10
 
      Identifier     { fg = hsl("#c1d1e3") }, -- (*) Any variable name
-     Function       { fg = hsl("#ffffff") }, --   Function name (also: methods for classes)
+     Function       { fg = hsl("#d1b897") }, --   Function name (also: methods for classes)
 
      Statement      { fg = hsl("#d1b897") }, -- (*) Any statement
-     Conditional    { fg = hsl("#ffffff") }, --   if, then, else, endif, switch, etc.
-     Repeat         { fg = hsl("#ffffff") }, --   for, do, while, etc.
+     Conditional    { fg = hsl("#d1b897") }, --   if, then, else, endif, switch, etc.
+     Repeat         { fg = hsl("#d1b897") }, --   for, do, while, etc.
      Label          { fg = hsl("#ffffff") }, --   case, default, etc.
      Operator       { fg = hsl("#d1b897") }, --   "sizeof", "+", "*", etc.
      Keyword        { fg = hsl("#d1b897") }, --   any other keyword
