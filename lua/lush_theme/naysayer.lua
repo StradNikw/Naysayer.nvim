@@ -106,7 +106,7 @@ local theme = lush(function(injected_functions)
      Macro          { fg = hsl("#8cde94") }, --   Same as Define
      PreCondit      { fg = hsl("#ffffff") }, --   Preprocessor #if, #else, #endif, etc.
 
-     Type           { fg = hsl("#d1b897") }, -- (*) int, long, char, etc.
+     Type           { fg = hsl("#8cde94") }, -- (*) int, long, char, etc.
      StorageClass   { fg = hsl("#c1d1e3") }, --   static, register, volatile, etc.
      Structure      { fg = hsl("#ffffff") }, --   struct, union, enum, etc.
      Typedef        { fg = hsl("#d1b897") }, --   A typedef
