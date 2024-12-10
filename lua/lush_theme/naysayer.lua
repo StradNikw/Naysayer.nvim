@@ -93,7 +93,7 @@ local theme = lush(function(injected_functions)
      Function       { fg = hsl("#d1b897") }, --   Function name (also: methods for classes)
 
      Statement      { fg = hsl("#d1b897") }, -- (*) Any statement
-     Conditional    { fg = hsl("#d1b897") }, --   if, then, else, endif, switch, etc.
+     Conditional    { fg = hsl("#ffffff") }, --   if, then, else, endif, switch, etc.
      Repeat         { fg = hsl("#d1b897") }, --   for, do, while, etc.
      Label          { fg = hsl("#ffffff") }, --   case, default, etc.
      Operator       { fg = hsl("#d1b897") }, --   "sizeof", "+", "*", etc.
@@ -177,8 +177,8 @@ local theme = lush(function(injected_functions)
     -- sym"@number"            { }, -- Number
     sym"@boolean"           { fg = hsl("#c1d1e3") }, -- Boolean
     -- sym"@float"             { }, -- Float
-    sym"@function"          { fg = hsl("#ffffff") }, -- Function
-    sym"@function.builtin"  { fg = hsl("#ffffff") }, -- Special
+    sym"@function"          { fg = hsl("#d1b897") }, -- Function
+    sym"@function.builtin"  { fg = hsl("#d1b897") }, -- Special
     -- sym"@function.macro"    { }, -- Macro
     -- sym"@parameter"         { }, -- Identifier
     -- sym"@method"            { }, -- Function
