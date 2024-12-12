@@ -21,14 +21,14 @@ local theme = lush(function(injected_functions)
      EndOfBuffer    { }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
      TermCursor     { fg = hsl("#8cde94"), bg = hsl("#8cde94") }, -- Cursor in a focused terminal
      TermCursorNC   { fg = hsl("#8cde94"), bg = hsl("#8cde94") }, -- Cursor in an unfocused terminal
-     ErrorMsg       { bg = hsl("#ff0000"), fg = hsl("#d1b897")}, -- Error messages on the command line
+     ErrorMsg       { bg = hsl("#ff0000"), fg = hsl("#c3b090")}, -- Error messages on the command line
      VertSplit      { bg = hsl("#062329") }, -- Column separating vertically split windows
      Folded         { }, -- Line used for closed folds
      FoldColumn     { bg = hsl("#062329") }, -- 'foldcolumn'
      SignColumn     { }, -- Column where |signs| are displayed
     -- IncSearch      { }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     -- Substitute     { }, -- |:substitute| replacement text highlighting
-     LineNr         { fg = hsl("#d1b897") }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+     LineNr         { fg = hsl("#c3b090") }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     -- LineNrAbove    { }, -- Line number for when the 'relativenumber' option is set, above the cursor line
     -- LineNrBelow    { }, -- Line number for when the 'relativenumber' option is set, below the cursor line
      CursorLineNr   { }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
@@ -39,17 +39,17 @@ local theme = lush(function(injected_functions)
     -- MsgArea        { }, -- Area for messages and cmdline
     -- MsgSeparator   { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
      MoreMsg        { }, -- |more-prompt|
-     NonText        { fg = hsl("#d1b897") }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
-     Normal         { bg = hsl("#072627"), fg=hsl("#d1b897") }, -- Normal text
-     NormalFloat    { bg = hsl("#062329"), fg=hsl("#d1b897") }, -- Normal text in floating windows.
+     NonText        { fg = hsl("#c3b090") }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+     Normal         { bg = hsl("#072627"), fg=hsl("#c3b090") }, -- Normal text
+     NormalFloat    { bg = hsl("#062329"), fg=hsl("#c3b090") }, -- Normal text in floating windows.
     -- FloatBorder    { }, -- Border of floating windows.
      FloatTitle     { }, -- Title of floating windows.
     -- NormalNC       { }, -- normal text in non-current windows
-     Pmenu          { fg = hsl("#d1b897") }, -- Popup menu: Normal item.
+     Pmenu          { fg = hsl("#c3b090") }, -- Popup menu: Normal item.
      PmenuSel       { fg = hsl("#ffffff"), bg = hsl"#8cde94" }, -- Popup menu: Selected item.
-     PmenuKind      { fg = hsl("#d1b897") }, -- Popup menu: Normal item "kind"
+     PmenuKind      { fg = hsl("#c3b090") }, -- Popup menu: Normal item "kind"
     -- PmenuKindSel   { }, -- Popup menu: Selected item "kind"
-     PmenuExtra     { fg = hsl("#d1b897") }, -- Popup menu: Normal item "extra text"
+     PmenuExtra     { fg = hsl("#c3b090") }, -- Popup menu: Normal item "extra text"
     -- PmenuExtraSel  { }, -- Popup menu: Selected item "extra text"
      PmenuSbar      { fg = hsl("#062329")}, -- Popup menu: Scrollbar.
      PmenuThumb     { fg = hsl("#ffffff") }, -- Popup menu: Thumb of the scrollbar.
@@ -61,17 +61,17 @@ local theme = lush(function(injected_functions)
     -- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     -- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     -- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-     StatusLine     { fg = hsl("#d1b897") }, -- Status line of current window
+     StatusLine     { fg = hsl("#c3b090") }, -- Status line of current window
      StatusLineNC   { }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
      TabLine        { fg = hsl("#062329")}, -- Tab pages line, not active tab page label
      TabLineFill    { }, -- Tab pages line, where there are no labels
      TabLineSel     { }, -- Tab pages line, active tab page label
-     Title          { fg = hsl("#d1b897") }, -- Titles for output from ":set all", ":autocmd" etc.
+     Title          { fg = hsl("#c3b090") }, -- Titles for output from ":set all", ":autocmd" etc.
      Visual         { bg = hsl("#0000ff")}, -- Visual mode selection
     -- VisualNOS      { }, -- Visual mode selection when vim is "Not Owning the Selection".
-     WarningMsg     { bg = hsl("#ffaa00"), fg = hsl("#d1b897")}, -- Warning messages
+     WarningMsg     { bg = hsl("#ffaa00"), fg = hsl("#c3b090")}, -- Warning messages
      Whitespace     { }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
-     Winseparator   { fg = hsl("#d1b897") }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
+     Winseparator   { fg = hsl("#c3b090") }, -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
      WildMenu       { }, -- Current match in 'wildmenu' completion
     -- WinBar         { }, -- Window bar of current window
     -- WinBarNC       { }, -- Window bar of not-current windows
@@ -84,20 +84,20 @@ local theme = lush(function(injected_functions)
 
      Constant       { fg = hsl("#7ad0c6") }, -- (*) Any constant
      String         { fg = hsl("#2ec90c") }, --   A string constant: "this is a string"
-     Character      { fg = hsl("#d1b897") }, --   A character constant: 'c', '\n'
+     Character      { fg = hsl("#c3b090") }, --   A character constant: 'c', '\n'
      Number         { fg = hsl("#7ad0c6") }, --   A number constant: 234, 0xff
      Boolean        { fg = hsl("#ffffff") }, --   A boolean constant: TRUE, false
      Float          { fg = hsl("#7ad0c6") }, --   A floating point constant: 2.3e10
 
      Identifier     { fg = hsl("#c1d1e3") }, -- (*) Any variable name
-     Function       { fg = hsl("#d1b897") }, --   Function name (also: methods for classes)
+     Function       { fg = hsl("#c3b090") }, --   Function name (also: methods for classes)
 
-     Statement      { fg = hsl("#d1b897") }, -- (*) Any statement
+     Statement      { fg = hsl("#c3b090") }, -- (*) Any statement
      Conditional    { fg = hsl("#ffffff") }, --   if, then, else, endif, switch, etc.
-     Repeat         { fg = hsl("#d1b897") }, --   for, do, while, etc.
+     Repeat         { fg = hsl("#c3b090") }, --   for, do, while, etc.
      Label          { fg = hsl("#ffffff") }, --   case, default, etc.
-     Operator       { fg = hsl("#d1b897") }, --   "sizeof", "+", "*", etc.
-     Keyword        { fg = hsl("#d1b897") }, --   any other keyword
+     Operator       { fg = hsl("#c3b090") }, --   "sizeof", "+", "*", etc.
+     Keyword        { fg = hsl("#c3b090") }, --   any other keyword
      Exception      { fg = hsl("#c1d1e3") }, --   try, catch, throw
 
      PreProc        { fg = hsl("#ffffff") }, -- (*) Generic Preprocessor
@@ -109,18 +109,18 @@ local theme = lush(function(injected_functions)
      Type           { fg = hsl("#8cde94") }, -- (*) int, long, char, etc.
      StorageClass   { fg = hsl("#c1d1e3") }, --   static, register, volatile, etc.
      Structure      { fg = hsl("#ffffff") }, --   struct, union, enum, etc.
-     Typedef        { fg = hsl("#d1b897") }, --   A typedef
+     Typedef        { fg = hsl("#c3b090") }, --   A typedef
 
      Special        { fg = hsl("#8cde94") }, -- (*) Any special symbol
      SpecialChar    { fg = hsl("#8cde94") }, --   Special character in a constant
      Tag            { fg = hsl("#8cde94") }, --   You can use CTRL-] on this
-     Delimiter      { fg = hsl("#d1b897") }, --   Character that needs attention
+     Delimiter      { fg = hsl("#c3b090") }, --   Character that needs attention
      SpecialComment { fg = hsl("#c1d1e3") }, --   Special things inside a comment (e.g. '\n')
     -- Debug          { }, --   Debugging statements
 
      Underlined     { gui = "underline" }, -- Text that stands out, HTML links
     -- Ignore         { fg= hsl("#062329")}, -- Left blank, hidden |hl-Ignore| (NOTE: May be invisible here in template)
-     Error          { bg = hsl("#ff0000"), fg = hsl"#d1b897" }, -- Any erroneous construct
+     Error          { bg = hsl("#ff0000"), fg = hsl"#c3b090" }, -- Any erroneous construct
      Todo           { fg = hsl("#ffffff") }, -- Anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
     -- LspReferenceText            { } , -- Used for highlighting "text" references
@@ -158,8 +158,8 @@ local theme = lush(function(injected_functions)
 
 
     -- sym"@text.literal"      { }, -- Comment
-    sym"@text.reference"    { fg = hsl("#d1b897") }, -- Identifier
-    sym"@text.title"        { fg = hsl("#d1b897") }, -- Title
+    sym"@text.reference"    { fg = hsl("#c3b090") }, -- Identifier
+    sym"@text.title"        { fg = hsl("#c3b090") }, -- Title
     -- sym"@text.uri"          { }, -- Underlined
     -- sym"@text.underline"    { }, -- Underlined
     -- sym"@text.todo"         { }, -- Todo
@@ -177,24 +177,24 @@ local theme = lush(function(injected_functions)
     -- sym"@number"            { }, -- Number
     sym"@boolean"           { fg = hsl("#c1d1e3") }, -- Boolean
     -- sym"@float"             { }, -- Float
-    sym"@function"          { fg = hsl("#d1b897") }, -- Function
-    sym"@function.builtin"  { fg = hsl("#d1b897") }, -- Special
+    sym"@function"          { fg = hsl("#c3b090") }, -- Function
+    sym"@function.builtin"  { fg = hsl("#c3b090") }, -- Special
     -- sym"@function.macro"    { }, -- Macro
     -- sym"@parameter"         { }, -- Identifier
     -- sym"@method"            { }, -- Function
-    sym"@field"             { fg = hsl("#d1b897") }, -- Identifier
-    sym"@property"          { fg = hsl("#d1b897") }, -- Identifier
+    sym"@field"             { fg = hsl("#c3b090") }, -- Identifier
+    sym"@property"          { fg = hsl("#c3b090") }, -- Identifier
     sym"@constructor.special"{ bg = hsl("#8cde94") }, -- Special
     sym"@conditional"       { fg = hsl("#ffffff") }, -- Conditional
     sym"@repeat"            { fg = hsl("#ffffff") }, -- Repeat
     -- sym"@label"             { }, -- Label
     -- sym"@operator"          { }, -- Operator
-    sym"@keyword"           { fg = hsl("#d1b897") }, -- Keyword
+    sym"@keyword"           { fg = hsl("#c3b090") }, -- Keyword
     -- sym"@exception"         { }, -- Exception
     -- sym"@variable"          { }, -- Identifier
     sym"@type"              { fg = hsl("#8cde94") }, -- Type
     sym"@type.definition"   { fg = hsl("#ffffff") }, -- Typedef
-    -- sym"@storageclass"      { fg = hsl("#d1b897") }, -- StorageClass
+    -- sym"@storageclass"      { fg = hsl("#c3b090") }, -- StorageClass
     sym"@structure"         { fg = hsl("#ffffff") }, -- Structure
     sym"@namespace"         { fg = hsl("#ffffff")  }, -- Identifier
     sym"@include"           { fg = hsl("#ffffff") }, -- Include
